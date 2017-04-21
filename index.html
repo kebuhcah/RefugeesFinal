@@ -225,6 +225,8 @@
 				function isIpad() {
 					return platform === "iPad"
 				}
+
+
 				window.shouldEnhance = mustNotEnhance() ? false : mustEnhance() ? true : couldEnhance() && weWantToEnhance()
 			})(window);
 			var isModernBrowser = "querySelector" in document && "addEventListener" in window && "localStorage" in window && "sessionStorage" in window && "bind" in Function && (("XMLHttpRequest" in window && "withCredentials" in new XMLHttpRequest()) || "XDomainRequest" in window);
@@ -472,6 +474,7 @@
 					function cssToDOMReplacer(str, m1, m2) {
 						return m1 + m2.toUpperCase()
 					}
+
 					return function(prop, value) {
 						try {
 							prop = cssToDOM(prop);
@@ -1545,7 +1548,7 @@
 				<section  class="fc-container fc-container--lazy-load fc-container--tag js-container--lazy-load ">
 					<div class="fc-container__inner">
 						<div class="fc-container__header js-container__header">
-								Censuses
+							Censuses
 						</div>
 						<div class="fc-container--rolled-up-hide fc-container__body" data-title="9 April 2017" data-id="9 April 2017">
 							<div class="fc-slice-wrapper">
@@ -1555,17 +1558,7 @@
 											<div class="fc-item__container">
 												<div class="fc-item__media-wrapper">
 													<div class="fc-item__image-container u-responsive-ratio ">
-														<picture>
-															<!--[if IE 9]><video style="display: none;"><![endif]-->
-															<source media="(min-width: 980px) and (-webkit-min-device-pixel-ratio: 1.25), (min-width: 980px) and (min-resolution: 120dpi)" sizes="460px" srcset="https://i.guim.co.uk/img/media/0e2b86087d3b40d131efa59e4c51596a5187f979/0_448_6720_4032/master/6720.jpg?w=460&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=dac1a0ad31d4b1ad0ad95b035e5cf250 920w">
-															<source media="(min-width: 980px)" sizes="460px" srcset="https://i.guim.co.uk/img/media/0e2b86087d3b40d131efa59e4c51596a5187f979/0_448_6720_4032/master/6720.jpg?w=460&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=9820ef5bcf8bae6ff9330725daa9d8e3 460w">
-															<source media="(min-width: 740px) and (-webkit-min-device-pixel-ratio: 1.25), (min-width: 740px) and (min-resolution: 120dpi)" sizes="340px" srcset="https://i.guim.co.uk/img/media/0e2b86087d3b40d131efa59e4c51596a5187f979/0_448_6720_4032/master/6720.jpg?w=340&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=44eb32544d756fa048af1b5e865ad481 680w">
-															<source media="(min-width: 740px)" sizes="340px" srcset="https://i.guim.co.uk/img/media/0e2b86087d3b40d131efa59e4c51596a5187f979/0_448_6720_4032/master/6720.jpg?w=340&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=1e5778365b8a49ef7a13e3ef165393d0 340w">
-															<source media="(min-width: 0px) and (-webkit-min-device-pixel-ratio: 1.25), (min-width: 0px) and (min-resolution: 120dpi)" sizes="95vw" srcset="https://i.guim.co.uk/img/media/0e2b86087d3b40d131efa59e4c51596a5187f979/0_448_6720_4032/master/6720.jpg?w=460&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=dac1a0ad31d4b1ad0ad95b035e5cf250 920w, https://i.guim.co.uk/img/media/0e2b86087d3b40d131efa59e4c51596a5187f979/0_448_6720_4032/master/6720.jpg?w=340&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=44eb32544d756fa048af1b5e865ad481 680w, https://i.guim.co.uk/img/media/0e2b86087d3b40d131efa59e4c51596a5187f979/0_448_6720_4032/master/6720.jpg?w=445&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=ca070b212c0b6eb04627f2da7d4de9ae 890w, https://i.guim.co.uk/img/media/0e2b86087d3b40d131efa59e4c51596a5187f979/0_448_6720_4032/master/6720.jpg?w=605&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=cb03b122b938bb08d0ae6936a3a5211c 1210w">
-															<source media="(min-width: 0px)" sizes="95vw" srcset="https://i.guim.co.uk/img/media/0e2b86087d3b40d131efa59e4c51596a5187f979/0_448_6720_4032/master/6720.jpg?w=460&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=9820ef5bcf8bae6ff9330725daa9d8e3 460w, https://i.guim.co.uk/img/media/0e2b86087d3b40d131efa59e4c51596a5187f979/0_448_6720_4032/master/6720.jpg?w=340&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=1e5778365b8a49ef7a13e3ef165393d0 340w, https://i.guim.co.uk/img/media/0e2b86087d3b40d131efa59e4c51596a5187f979/0_448_6720_4032/master/6720.jpg?w=445&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=75924488060ed5414e52b5d59f1c9d66 445w, https://i.guim.co.uk/img/media/0e2b86087d3b40d131efa59e4c51596a5187f979/0_448_6720_4032/master/6720.jpg?w=605&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=55d2786024213f60b5d43becb5e72c2d 605w">
-															<!--[if IE 9]></video><![endif]-->
-															<img class="responsive-img" alt="">
-														</picture>
+														<img class="responsive-img" alt="" src="https://gdb.voanews.com/67621374-8E1E-4B5E-8472-C21020641A1E_cx0_cy4_cw0_w1023_r1_s.jpg">
 													</div>
 												</div>
 												<div class="fc-item__content">
@@ -1573,16 +1566,8 @@
 														<h2 class="fc-item__title"><a href="./story_template.html" class="fc-item__link" data-link-name="article"><span class="fc-item__kicker">Counting refugees</span> <span class="u-faux-block-link__cta fc-item__headline"> <span class="js-headline-text">Iran: Filling in gaps in the data</span></span> </a></h2>
 													</div>
 													<div class="fc-item__standfirst">
-														Iran, where more than half of Afghan refugees are believed to be undocumented, has begun a comprehensive census of Afghans in order to provide them with documents 
+														Iran, where more than half of Afghan refugees are believed to be undocumented, has begun a comprehensive census of Afghans in order to provide them with documents
 													</div>
-													<aside class="fc-item__meta js-item__meta">
-														<time class="fc-item__timestamp" datetime="2017-04-09T21:00:18+0000" data-timestamp="1491771618000" data-relativeformat="short">
-															<span class="inline-clock inline-icon ">
-																<svg width="11" height="11" viewBox="0 0 11 11" class="inline-clock__svg inline-icon__svg">
-																	<path d="M5.4 0C2.4 0 0 2.4 0 5.4s2.4 5.4 5.4 5.4 5.4-2.4 5.4-5.4S8.4 0 5.4 0zm3 6.8H4.7V1.7h.7L6 5.4l2.4.6v.8z"></path>
-																</svg> </span><span class="fc-timestamp__text"> <span class="u-h">Published: </span>10:00 PM </span>
-														</time>
-													</aside>
 												</div>
 												<a href="./story_template.html" class="u-faux-block-link__overlay js-headline-text" data-link-name="article" tabindex="-1">Rochdale: where every 200th person is an asylum seeker</a>
 											</div>
@@ -1593,17 +1578,7 @@
 											<div class="fc-item__container">
 												<div class="fc-item__media-wrapper">
 													<div class="fc-item__image-container u-responsive-ratio ">
-														<picture>
-															<!--[if IE 9]><video style="display: none;"><![endif]-->
-															<source media="(min-width: 980px) and (-webkit-min-device-pixel-ratio: 1.25), (min-width: 980px) and (min-resolution: 120dpi)" sizes="460px" srcset="https://i.guim.co.uk/img/media/5a8aa807be1b2944dd9283f61c09e25281df5d1a/173_0_3027_1817/master/3027.jpg?w=460&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=822e55e5ac731793f7d03d1089838265 920w">
-															<source media="(min-width: 980px)" sizes="460px" srcset="https://i.guim.co.uk/img/media/5a8aa807be1b2944dd9283f61c09e25281df5d1a/173_0_3027_1817/master/3027.jpg?w=460&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=6ff4e428f0bbb1e3ef3660b29b627cd7 460w">
-															<source media="(min-width: 740px) and (-webkit-min-device-pixel-ratio: 1.25), (min-width: 740px) and (min-resolution: 120dpi)" sizes="340px" srcset="https://i.guim.co.uk/img/media/5a8aa807be1b2944dd9283f61c09e25281df5d1a/173_0_3027_1817/master/3027.jpg?w=340&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=3aca996c8351af02999b3f56d39b0782 680w">
-															<source media="(min-width: 740px)" sizes="340px" srcset="https://i.guim.co.uk/img/media/5a8aa807be1b2944dd9283f61c09e25281df5d1a/173_0_3027_1817/master/3027.jpg?w=340&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=9d31288f8bc3261fca7bd9da3f8196d7 340w">
-															<source media="(min-width: 0px) and (-webkit-min-device-pixel-ratio: 1.25), (min-width: 0px) and (min-resolution: 120dpi)" sizes="127px" srcset="https://i.guim.co.uk/img/media/5a8aa807be1b2944dd9283f61c09e25281df5d1a/173_0_3027_1817/master/3027.jpg?w=127&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=e98c27a4088f5b1ca48a7769d618af54 254w">
-															<source media="(min-width: 0px)" sizes="127px" srcset="https://i.guim.co.uk/img/media/5a8aa807be1b2944dd9283f61c09e25281df5d1a/173_0_3027_1817/master/3027.jpg?w=127&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=1f47f52d2d8803b5bb3db109aaf22847 127w">
-															<!--[if IE 9]></video><![endif]-->
-															<img class="responsive-img" alt="">
-														</picture>
+														<img class="responsive-img" alt="" src="https://gdb.rferl.org/FB8ADC26-D144-40B6-9668-E6AC2BDC04B5_w1023_r1_s.jpg">
 													</div>
 												</div>
 												<div class="fc-item__content">
@@ -1611,16 +1586,8 @@
 														<h2 class="fc-item__title"><a href="https://www.theguardian.com/world/2017/apr/09/its-a-shambles-data-shows-most-asylum-seekers-put-in-poorest-parts-of-britain" class="fc-item__link" data-link-name="article"><span class="fc-item__kicker">Counting refugees</span> <span class="u-faux-block-link__cta fc-item__headline"> <span class="js-headline-text">Pakistan: politically-motivated neglect</span></span> </a></h2>
 													</div>
 													<div class="fc-item__standfirst">
-														Analysis shows five times as many live in poorest third of country as in richest third, sparking calls for overhaul of system
+														In Pakistan's first census since 1998, a last-minute court decision means that Afghan refugees will remain uncounted
 													</div>
-													<aside class="fc-item__meta js-item__meta">
-														<time class="fc-item__timestamp" datetime="2017-04-09T21:00:18+0000" data-timestamp="1491771618000" data-relativeformat="short">
-															<span class="inline-clock inline-icon ">
-																<svg width="11" height="11" viewBox="0 0 11 11" class="inline-clock__svg inline-icon__svg">
-																	<path d="M5.4 0C2.4 0 0 2.4 0 5.4s2.4 5.4 5.4 5.4 5.4-2.4 5.4-5.4S8.4 0 5.4 0zm3 6.8H4.7V1.7h.7L6 5.4l2.4.6v.8z"></path>
-																</svg> </span><span class="fc-timestamp__text"> <span class="u-h">Published: </span>10:00 PM </span>
-														</time>
-													</aside>
 												</div>
 												<a href="./story_template.html" class="u-faux-block-link__overlay js-headline-text" data-link-name="article" tabindex="-1">'It's a shambles': data shows most asylum seekers put in poorest parts of Britain</a>
 											</div>
@@ -1634,7 +1601,7 @@
 				<section id="6-april-2017" class="fc-container fc-container--lazy-load fc-container--tag js-container--lazy-load " data-link-name="container-14 | 6-april-2017" data-id="6 April 2017" data-component="6-april-2017" aria-expanded="true">
 					<div class="fc-container__inner">
 						<div class="fc-container__header js-container__header">
-								Refugee Lives
+							Refugee Lives
 						</div>
 						<div class="fc-container--rolled-up-hide fc-container__body" data-title="6 April 2017" data-id="6 April 2017">
 							<div class="fc-slice-wrapper">
@@ -1644,35 +1611,16 @@
 											<div class="fc-item__container">
 												<div class="fc-item__media-wrapper">
 													<div class="fc-item__image-container u-responsive-ratio ">
-														<picture>
-															<!--[if IE 9]><video style="display: none;"><![endif]-->
-															<source media="(min-width: 980px) and (-webkit-min-device-pixel-ratio: 1.25), (min-width: 980px) and (min-resolution: 120dpi)" sizes="460px" srcset="https://i.guim.co.uk/img/media/c592e422042c641c3766c43786b3736e17357a2e/0_182_5472_3283/master/5472.jpg?w=460&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=8ba5115c6182e8bb01204b1950e5a589 920w">
-															<source media="(min-width: 980px)" sizes="460px" srcset="https://i.guim.co.uk/img/media/c592e422042c641c3766c43786b3736e17357a2e/0_182_5472_3283/master/5472.jpg?w=460&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=4f124d32eae9a180a447e0cc3a79d180 460w">
-															<source media="(min-width: 740px) and (-webkit-min-device-pixel-ratio: 1.25), (min-width: 740px) and (min-resolution: 120dpi)" sizes="340px" srcset="https://i.guim.co.uk/img/media/c592e422042c641c3766c43786b3736e17357a2e/0_182_5472_3283/master/5472.jpg?w=340&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=f6fcee3da23b2ac30c20066657265a90 680w">
-															<source media="(min-width: 740px)" sizes="340px" srcset="https://i.guim.co.uk/img/media/c592e422042c641c3766c43786b3736e17357a2e/0_182_5472_3283/master/5472.jpg?w=340&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=9ad3df0c00177b48fbf419809f54a565 340w">
-															<source media="(min-width: 0px) and (-webkit-min-device-pixel-ratio: 1.25), (min-width: 0px) and (min-resolution: 120dpi)" sizes="95vw" srcset="https://i.guim.co.uk/img/media/c592e422042c641c3766c43786b3736e17357a2e/0_182_5472_3283/master/5472.jpg?w=460&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=8ba5115c6182e8bb01204b1950e5a589 920w, https://i.guim.co.uk/img/media/c592e422042c641c3766c43786b3736e17357a2e/0_182_5472_3283/master/5472.jpg?w=340&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=f6fcee3da23b2ac30c20066657265a90 680w, https://i.guim.co.uk/img/media/c592e422042c641c3766c43786b3736e17357a2e/0_182_5472_3283/master/5472.jpg?w=445&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=293d25ebe0bdcb16c1f065f996cadb54 890w, https://i.guim.co.uk/img/media/c592e422042c641c3766c43786b3736e17357a2e/0_182_5472_3283/master/5472.jpg?w=605&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=a4f8aa252595f76421227902aa63f23a 1210w">
-															<source media="(min-width: 0px)" sizes="95vw" srcset="https://i.guim.co.uk/img/media/c592e422042c641c3766c43786b3736e17357a2e/0_182_5472_3283/master/5472.jpg?w=460&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=4f124d32eae9a180a447e0cc3a79d180 460w, https://i.guim.co.uk/img/media/c592e422042c641c3766c43786b3736e17357a2e/0_182_5472_3283/master/5472.jpg?w=340&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=9ad3df0c00177b48fbf419809f54a565 340w, https://i.guim.co.uk/img/media/c592e422042c641c3766c43786b3736e17357a2e/0_182_5472_3283/master/5472.jpg?w=445&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=51c3a2db3ad9b9dd50af22394d857d93 445w, https://i.guim.co.uk/img/media/c592e422042c641c3766c43786b3736e17357a2e/0_182_5472_3283/master/5472.jpg?w=605&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=7724daef7af9160ac9069157e9bdc389 605w">
-															<!--[if IE 9]></video><![endif]-->
-															<img class="responsive-img" alt="">
-														</picture>
+														<img class="responsive-img" alt="" src="http://cdn.presstv.com/photo/20170316/73e3a2c2-6f0e-4813-86c3-43a57eff1c4a.jpg">
 													</div>
 												</div>
 												<div class="fc-item__content">
 													<div class="fc-item__header">
-														<h2 class="fc-item__title"><a href="https://www.theguardian.com/politics/audio/2017/apr/06/can-politicians-solve-the-refugee-crisis-politics-weekly-podcast" class="fc-item__link" data-link-name="article"><span class="fc-item__kicker">Photos</span> <span class="u-faux-block-link__cta fc-item__headline"> <span class="inline-volume-high inline-icon ">
-																</span> <span class="js-headline-text">Afghans in Iran receive a reserved welcome</span></span> </a></h2>
+														<h2 class="fc-item__title"><a href="https://www.theguardian.com/politics/audio/2017/apr/06/can-politicians-solve-the-refugee-crisis-politics-weekly-podcast" class="fc-item__link" data-link-name="article"><span class="fc-item__kicker">Photos</span> <span class="u-faux-block-link__cta fc-item__headline"> <span class="inline-volume-high inline-icon "> </span> <span class="js-headline-text">Afghans in Iran receive a reserved welcome</span></span> </a></h2>
 													</div>
 													<div class="fc-item__standfirst">
-														Heather Stewart is joined by Paul Collier, Alexander Betts and Kate Lyons to discuss potential policy solutions to the global refugee crisis
+														Iran has been praised by international organizations for its successful integration of Afghan refugees
 													</div>
-													<aside class="fc-item__meta js-item__meta">
-														<time class="fc-item__timestamp" datetime="2017-04-06T11:22:03+0000" data-timestamp="1491477723000" data-relativeformat="short">
-															<span class="inline-clock inline-icon ">
-																<svg width="11" height="11" viewBox="0 0 11 11" class="inline-clock__svg inline-icon__svg">
-																	<path d="M5.4 0C2.4 0 0 2.4 0 5.4s2.4 5.4 5.4 5.4 5.4-2.4 5.4-5.4S8.4 0 5.4 0zm3 6.8H4.7V1.7h.7L6 5.4l2.4.6v.8z"></path>
-																</svg> </span><span class="fc-timestamp__text"> <span class="u-h">Published: </span>12:22 PM </span>
-														</time>
-													</aside>
 												</div>
 												<a href="./story_template.html" class="u-faux-block-link__overlay js-headline-text" data-link-name="article" tabindex="-1">Can politicians solve the refugee crisis? – Politics Weekly podcast</a>
 											</div>
@@ -1683,17 +1631,7 @@
 											<div class="fc-item__container">
 												<div class="fc-item__media-wrapper">
 													<div class="fc-item__image-container u-responsive-ratio ">
-														<picture>
-															<!--[if IE 9]><video style="display: none;"><![endif]-->
-															<source media="(min-width: 980px) and (-webkit-min-device-pixel-ratio: 1.25), (min-width: 980px) and (min-resolution: 120dpi)" sizes="460px" srcset="https://i.guim.co.uk/img/media/2c396241365d6a73b3cac5523fbd728582daa901/0_271_3500_2099/master/3500.jpg?w=460&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=4cd121f87a65f8be827fbacc389ced25 920w">
-															<source media="(min-width: 980px)" sizes="460px" srcset="https://i.guim.co.uk/img/media/2c396241365d6a73b3cac5523fbd728582daa901/0_271_3500_2099/master/3500.jpg?w=460&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=6751233517647ecda9500fae1de7706e 460w">
-															<source media="(min-width: 740px) and (-webkit-min-device-pixel-ratio: 1.25), (min-width: 740px) and (min-resolution: 120dpi)" sizes="340px" srcset="https://i.guim.co.uk/img/media/2c396241365d6a73b3cac5523fbd728582daa901/0_271_3500_2099/master/3500.jpg?w=340&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=a05b4d19526ec338cfbda436c210e528 680w">
-															<source media="(min-width: 740px)" sizes="340px" srcset="https://i.guim.co.uk/img/media/2c396241365d6a73b3cac5523fbd728582daa901/0_271_3500_2099/master/3500.jpg?w=340&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=9941fea710214b2f9652eeb5c67e179a 340w">
-															<source media="(min-width: 0px) and (-webkit-min-device-pixel-ratio: 1.25), (min-width: 0px) and (min-resolution: 120dpi)" sizes="127px" srcset="https://i.guim.co.uk/img/media/2c396241365d6a73b3cac5523fbd728582daa901/0_271_3500_2099/master/3500.jpg?w=127&amp;q=20&amp;auto=format&amp;usm=12&amp;fit=max&amp;dpr=2&amp;s=e7d5bfb88b6ecd06a1c96620bce1dd41 254w">
-															<source media="(min-width: 0px)" sizes="127px" srcset="https://i.guim.co.uk/img/media/2c396241365d6a73b3cac5523fbd728582daa901/0_271_3500_2099/master/3500.jpg?w=127&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=0ab960c992433cf1063ad98824d875d0 127w">
-															<!--[if IE 9]></video><![endif]-->
-															<img class="responsive-img" alt="">
-														</picture>
+														<img class="responsive-img" alt="" src="https://i.dawn.com/primary/2017/03/58bd95d82a953.jpg">
 													</div>
 												</div>
 												<div class="fc-item__content">
@@ -1701,16 +1639,8 @@
 														<h2 class="fc-item__title"><a href="https://www.theguardian.com/world/2017/apr/06/germany-devours-book-on-angela-merkel-decision-to-open-borders" class="fc-item__link" data-link-name="article"> <span class="u-faux-block-link__cta fc-item__headline"> <span class="js-headline-text">Pakistan sends refugees back to a "safe" Afghanistan</span></span> </a></h2>
 													</div>
 													<div class="fc-item__standfirst">
-														Non-fiction thriller and novel on her state of mind both claim refugee crisis changed relationship between chancellor and her people
+														As war with ISIS, Taliban and Al-Qaeda rages on in Afghanistan, Pakistan continues its repatriation efforts 
 													</div>
-													<aside class="fc-item__meta js-item__meta">
-														<time class="fc-item__timestamp" datetime="2017-04-06T05:22:26+0000" data-timestamp="1491456146000" data-relativeformat="short">
-															<span class="inline-clock inline-icon ">
-																<svg width="11" height="11" viewBox="0 0 11 11" class="inline-clock__svg inline-icon__svg">
-																	<path d="M5.4 0C2.4 0 0 2.4 0 5.4s2.4 5.4 5.4 5.4 5.4-2.4 5.4-5.4S8.4 0 5.4 0zm3 6.8H4.7V1.7h.7L6 5.4l2.4.6v.8z"></path>
-																</svg> </span><span class="fc-timestamp__text"> <span class="u-h">Published: </span>6:22 AM </span>
-														</time>
-													</aside>
 												</div>
 												<a href="./story_template.html" class="u-faux-block-link__overlay js-headline-text" data-link-name="article" tabindex="-1">Germany devours book on Angela Merkel decision to open borders</a>
 											</div>
@@ -1724,23 +1654,6 @@
 				<section class="fc-container__mpu--mobile">
 
 				</section>
-				<div class="fc-container__pagination">
-					<div class="pagination pagination--full u-cf">
-						<span class="pagination__legend hide-on-mobile-inline">About 7,346 results for Refugees</span>
-						<div class="pagination__list">
-							<span class="button button--small button--tertiary pagination__action is-active" aria-label="Current page" tabindex="0">1</span>
-							<a class="button button--small button--tertiary pagination__action " data-page="2" href="https://www.theguardian.com/world/refugees?page=2" data-link-name="Pagination view page 2" aria-label=" page 2">2</a>
-							<a class="button button--small button--tertiary pagination__action " data-page="3" href="https://www.theguardian.com/world/refugees?page=3" data-link-name="Pagination view page 3" aria-label=" page 3">3</a>
-							<a class="button button--small button--tertiary pagination__action " data-page="4" href="https://www.theguardian.com/world/refugees?page=4" data-link-name="Pagination view page 4" aria-label=" page 4">4</a>
-							<span class="pagination__text">…</span>
-							<a class="button button--small button--tertiary pagination__action pagination__action--last " href="https://www.theguardian.com/world/refugees?page=210" data-page="210" data-link-name="Pagination view page 210" aria-label=" last page">210</a>
-							<a class="button button--small button--tertiary pagination__action--static " data-page="2" rel="next" href="https://www.theguardian.com/world/refugees?page=2" data-link-name="Pagination view next" aria-label=" next page"> <span class="inline-arrow-left inline-icon pagination__icon pagination__icon--next">
-								<svg width="6" height="12" viewBox="0 0 6 12" class="pagination__icon__svg pagination__icon--next__svg inline-arrow-left__svg inline-icon__svg">
-									<path d="M6 11.5L1.5 6 6 .5 5.5 0 0 5.75v.5L5.5 12l.5-.5z"></path>
-								</svg> </span> <span class="u-h">next</span> </a>
-						</div>
-					</div>
-				</div>
 				<section class="fc-container__inner fc-trending-topics" data-component="trending-topics">
 					<div class="submeta submeta--borderless-bottom" data-link-name="keywords">
 						<span class="submeta__label">Topics</span>
@@ -1750,41 +1663,18 @@
 									<a class="  submeta__link" href="https://www.theguardian.com/world/migration" data-link-name="keyword: world/migration" itemprop="keywords"> Migration </a>
 								</li>
 								<li class="submeta__link-item">
-									<a class="  submeta__link" href="https://www.theguardian.com/world/europe-news" data-link-name="keyword: world/europe-news" itemprop="keywords"> Europe </a>
+									<a class="submeta__link" href="https://www.theguardian.com/world/afghanistan" data-link-name="keyword: world/afghanistan"> Afghanistan </a>
 								</li>
 								<li class="submeta__link-item">
-									<a class="  submeta__link" href="https://www.theguardian.com/world/asia-pacific" data-link-name="keyword: world/asia-pacific" itemprop="keywords"> Asia Pacific </a>
+									<a class="submeta__link" href="https://www.theguardian.com/world/south-and-central-asia" data-link-name="keyword: world/south-and-central-asia"> South and Central Asia </a>
 								</li>
 								<li class="submeta__link-item">
-<a class="submeta__link" href="https://www.theguardian.com/world/afghanistan" data-link-name="keyword: world/afghanistan">
-Afghanistan
-</a>
-</li>
-<li class="submeta__link-item">
-<a class="submeta__link" href="https://www.theguardian.com/world/south-and-central-asia" data-link-name="keyword: world/south-and-central-asia">
-South and Central Asia
-</a>
-</li>
-<li class="submeta__link-item">
-<a class="submeta__link" href="https://www.theguardian.com/world/pakistan" data-link-name="keyword: world/pakistan">
-Pakistan
-</a>
-</li>
-<li class="submeta__link-item">
-<a class="submeta__link" href="https://www.theguardian.com/world/migration" data-link-name="keyword: world/migration">
-Migration
-</a>
-</li>
-<li class="submeta__link-item">
-<a class="submeta__link" href="https://www.theguardian.com/world/europe-news" data-link-name="keyword: world/europe-news">
-Europe
-</a>
-</li>
-<li class="submeta__link-item">
-<a class="submeta__link" href="https://www.theguardian.com/tone/comment" data-link-name="tone: Comment">
-comment
-</a>
-</li>
+									<a class="submeta__link" href="https://www.theguardian.com/world/pakistan" data-link-name="keyword: world/pakistan"> Pakistan </a>
+								</li>
+								<li class="submeta__link-item">
+									<a class="submeta__link" href="https://www.theguardian.com/world/iran" data-link-name="keyword: world/iran"> Iran </a>
+								</li>
+
 							</ul>
 						</div>
 					</div>
@@ -2469,6 +2359,8 @@ comment
 					});
 					return value
 				}
+
+
 				window.guardian.config.ophan.browserId = getCookieValue("bwid")
 			})(window, document);
 		</script>
