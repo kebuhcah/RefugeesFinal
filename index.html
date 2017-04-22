@@ -88,53 +88,8 @@
 			window.console = window.console || undefined;
 		</script>
 		<script id="gu">
-			(function(window) {
-				var location = window.location;
-				var hash = location.hash;
-				var navigator = window.navigator;
-				var platform = navigator.platform;
-				var isFront = true;
-				var enhancedKey = "gu.prefs.enhanced";
-				var preferEnhanced;
-				try {
-					preferEnhanced = JSON.parse(localStorage.getItem(enhancedKey)).value
-				} catch(e) {
-					preferEnhanced = null
-				}
-				function mustEnhance() {
-					if (hash === "#enhanced" || hash === "#" + enhancedKey + "\x3dtrue")
-						return true;
-					if (preferEnhanced)
-						return true;
-					return false
-				}
-
-				function mustNotEnhance() {
-					return hash === "#standard" || hash === "#" + enhancedKey + "\x3dfalse"
-				}
-
-				function couldEnhance() {
-					return preferEnhanced !== false
-				}
-
-				function weWantToEnhance() {
-					if (isOlderIOSDevice())
-						return false;
-					if (isFront)
-						return !isIpad();
-					return true
-				}
-
-				function isOlderIOSDevice() {
-					return /.*(iPhone|iPad|iPod; CPU) OS ([34567])_\d+.*/.test(navigator.userAgent)
-				}
-
-				function isIpad() {
-					return platform === "iPad"
-				}
-
-
-				window.shouldEnhance = mustNotEnhance() ? false : mustEnhance() ? true : couldEnhance() && weWantToEnhance()
+			(function(window) {				
+				window.shouldEnhance = true
 			})(window);
 			var isModernBrowser = "querySelector" in document && "addEventListener" in window && "localStorage" in window && "sessionStorage" in window && "bind" in Function && (("XMLHttpRequest" in window && "withCredentials" in new XMLHttpRequest()) || "XDomainRequest" in window);
 			window.guardian = {
@@ -171,11 +126,7 @@
 				}
 			};
 			function guardianPolyfilled() {
-				try {
 					window.guardian.polyfilled = true;
-					window.guardian.onPolyfilled()
-				} catch(e) {
-				}
 			}(function(document, window) {
 				var ref = document.getElementsByTagName("script")[0];
 				var polyfillScript,
