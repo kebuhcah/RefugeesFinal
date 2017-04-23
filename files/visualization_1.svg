@@ -19,7 +19,7 @@
    sodipodi:docname="visualization_1.svg"><metadata
      id="metadata4161"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs4159"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath4179"><path
@@ -455,13 +455,13 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1288"
-     inkscape:window-height="759"
+     inkscape:window-width="1280"
+     inkscape:window-height="756"
      id="namedview4157"
      showgrid="false"
-     inkscape:zoom="0.72810458"
-     inkscape:cx="495"
-     inkscape:cy="72.662868"
+     inkscape:zoom="1.3592852"
+     inkscape:cx="296.59808"
+     inkscape:cy="208.22751"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -713,7 +713,8 @@
                  id="tspan4347"
                  sodipodi:role="line"
                  y="0"
-                 x="0 7.328125 13.4375 19.546875">Year</tspan></text>
+                 x="0 7.328125 13.4375 19.546875"
+                 style="-inkscape-font-specification:'Merriweather Light,  Light';font-family:'Merriweather Light';font-weight:300;font-style:normal;font-stretch:normal;font-variant:normal">Year</tspan></text>
 </g></g></g></g><g
        id="g4349"
        transform="matrix(0.927446,0,0,-0.89125816,37.005204,680.62351)"><g
@@ -1448,7 +1449,8 @@
              id="tspan5319"
              sodipodi:role="line"
              y="0"
-             x="0 8.65625 15.984375 23.3125 30.640625 34.625 39.28125">Country</tspan></text>
+             x="0 8.65625 15.984375 23.3125 30.640625 34.625 39.28125"
+             style="-inkscape-font-specification:'Merriweather Light,  Light';font-family:'Merriweather Light';font-weight:300;font-style:normal;font-stretch:normal;font-variant:normal">Country</tspan></text>
 </g></g><g
        id="g5321"
        transform="matrix(0.59461474,0,0,-0.66392556,-101.25058,315.92559)"
@@ -1476,7 +1478,8 @@
              id="tspan5337"
              sodipodi:role="line"
              y="0"
-             x="0 3.046875 6.703125 12.8125">Iran</tspan></text>
+             x="0 3.046875 6.703125 12.8125"
+             style="-inkscape-font-specification:'Merriweather Light,  Light';font-family:'Merriweather Light';font-weight:300;font-style:normal;font-stretch:normal;font-variant:normal">Iran</tspan></text>
 </g></g><g
        id="g5339"
        transform="matrix(0.59461474,0,0,-0.66392556,-101.25058,315.92559)"
@@ -1504,7 +1507,8 @@
              id="tspan5355"
              sodipodi:role="line"
              y="0"
-             x="0 7.328125 13.4375 18.9375 21.375 26.875 29.921875 36.03125">Pakistan</tspan></text>
+             x="0 7.328125 13.4375 18.9375 21.375 26.875 29.921875 36.03125"
+             style="-inkscape-font-specification:'Merriweather Light,  Light';font-family:'Merriweather Light';font-weight:300;font-style:normal;font-stretch:normal;font-variant:normal">Pakistan</tspan></text>
 </g></g><g
        id="g5357"
        transform="matrix(0.927446,0,0,-0.89125816,37.005204,680.62351)"><g
@@ -1515,4 +1519,39 @@
        id="g5367"
        transform="matrix(0.927446,0,0,-0.89125816,37.005204,680.62351)"><g
          transform="scale(0.88724554,0.88724554)"
-         id="g5369" /></g></g></svg>
+         id="g5369" /></g><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;line-height:125%;font-family:Merriweather;-inkscape-font-specification:'Merriweather Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="231.83484"
+       y="-281.27826"
+       id="text5958"
+       sodipodi:linespacing="125%"
+       transform="scale(1,-1)"
+       inkscape:transform-center-x="-4.1202872"><tspan
+         sodipodi:role="line"
+         id="tspan5960"
+         x="231.83484"
+         y="-281.27826"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8px;font-family:'Merriweather Light';-inkscape-font-specification:'Merriweather Light, Light'">funding increase due to </tspan><tspan
+         sodipodi:role="line"
+         x="231.83484"
+         y="-271.27826"
+         id="tspan5962"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8px;font-family:'Merriweather Light';-inkscape-font-specification:'Merriweather Light, Light'">flooding in Pakistan</tspan></text>
+<path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 108.77558,63.727112 0,65.924588"
+       id="path4686"
+       inkscape:connector-curvature="0" /><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8px;line-height:125%;font-family:'Merriweather Light';-inkscape-font-specification:'Merriweather Light,  Light';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="58.357563"
+       y="-132.79124"
+       id="text4688"
+       sodipodi:linespacing="125%"
+       transform="scale(1,-1)"><tspan
+         sodipodi:role="line"
+         x="58.357563"
+         y="-132.79124"
+         id="tspan4692">U.S. invasion of Afghanistan</tspan></text>
+</g></svg>
