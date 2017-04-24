@@ -6,7 +6,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<!-- needed following line for mobile detection -->
 		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-		<title>Afghan Refugees | Afghanistan</title>
+		<title>Afghan Refugees</title>
 		<!-- move css to separate file (was saved inline when saving the original page) -->
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<!-- Guardian font (removed other fonts which weren't being used) -->
@@ -26,15 +26,11 @@
 				font-weight: 700
 			}
 		</style>
-		<script id="gu">
+		<script>
 			/* this appears to be the bare minimum needed to render the page properly, especially for mobile */
-			(function(window) {
-				window.shouldEnhance = true
-			})(window);
-			var isModernBrowser = "querySelector" in document && "addEventListener" in window && "localStorage" in window && "sessionStorage" in window && "bind" in Function && (("XMLHttpRequest" in window && "withCredentials" in new XMLHttpRequest()) || "XDomainRequest" in window);
 			window.guardian = {
-				isModernBrowser : isModernBrowser,
-				isEnhanced : window.shouldEnhance && isModernBrowser,
+				isModernBrowser : true,
+				isEnhanced : true,
 				css : {
 					loaded : false
 				},
@@ -45,8 +41,8 @@
 				},
 				config : {
 					"page" : {
-						"isFront" : true, // can't delete, mobile will fail
-						"assetsPath" : "https://assets.guim.co.uk/", // can't delete, mobile will fail
+						"isFront" : true, // can't delete, mobile will not display
+						"assetsPath" : "https://assets.guim.co.uk/", // can't delete, mobile will not display
 						"sentryHost" : "app.getsentry.com/35463", // can't delete, mobile will fail
 					},
 					"switches" : {},
@@ -73,8 +69,8 @@
 			})(document, window);
 		</script>
 	</head>
-	<body id="top" class="has-localnav">
-		<div id="bannerandheader">
+	<body>
+		<div>
 			<!-- header has two versions for mobile and non-mobile, this is the non-mobile -->
 			<header class="new-header">
 				<div class="new-header__inner gs-container">
