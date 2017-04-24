@@ -8,7 +8,9 @@
 		<meta name="author" content="Amel Ghani">
 		<meta name="author" content="Somayeh Malekian">
 		<meta name="author" content="Kevin Sun">
+		<!-- move css to separate file (was saved inline when saving the original page) -->
 		<link rel="stylesheet" type="text/css" href="css/story.css">
+		<!-- Guardian font (removed other fonts which weren't being used) -->
 		<style class="webfont">
 			@font-face {
 				font-family: "Guardian Egyptian Web";
@@ -31,15 +33,13 @@
 				font-weight: 900
 			}
 		</style>
-		<script>
-			window.console = window.console || undefined;
-		</script>
 	</head>
 	<body id="top">
 		<div id="bannerandheader">
+			<!-- header has two versions for mobile and non-mobile, this is the non-mobile -->
 			<header class="new-header">
 				<div class="new-header__inner gs-container">
-					<a class="new-header__logo-wrapper"  href="index.html"> <span class="u-h">Afghanistan</span> <span class="inline-guardian-logo-160 inline-logo new-header__logo">
+					<a class="new-header__logo-wrapper"  href="index.html"> <span class="u-h">Afghanistan</span> <span class="inline-guardian-logo-160 inline-logo new-header__logo"> <!-- inkscape-generated custom svg logo. TODO: simplify! original Guardian logo had just two paths -->
 						<svg width="160" height="30" viewBox="0 0 480 120" class="new-header__logo__svg inline-guardian-logo-160__svg inline-logo__svg">
 							<path fill="#AADCE6" d="m 10.26311,71.486488 q 0,-4.262695 2.065429,-7.382812 2.109375,-3.120117 5.888672,-5.185547 3.823242,-2.06543 9.184571,-3.076172 5.405273,-1.054687 11.99707,-1.142578 l 0,-1.845703 q 0,-2.285156 -0.351563,-3.999024 -0.351562,-1.713867 -1.362304,-2.856445 -0.966797,-1.142578 -2.72461,-1.669922 -1.713867,-0.571289 -4.482422,-0.571289 -2.548828,0 -4.790039,0.351563 -2.197265,0.351562 -4.130859,0.878906 -1.933594,0.527344 -3.55957,1.142578 -1.582032,0.615234 -2.900391,1.186523 l -0.04395,0 -2.856446,-5.932617 q 0.878907,-0.74707 2.944336,-1.933593 2.109375,-1.186524 5.009766,-2.329102 2.944336,-1.142578 6.503906,-1.933594 3.603516,-0.834961 7.426758,-0.834961 5.273438,0 8.833008,1.010742 3.55957,1.010743 5.668945,3.208008 2.15332,2.197266 3.076172,5.668946 0.922852,3.471679 0.922852,8.393554 l 0,26.938477 4.790039,0 0,5.581055 q -0.834961,0.175781 -2.197266,0.395507 -1.362305,0.263672 -2.988281,0.483399 -1.582031,0.263672 -3.251953,0.395508 -1.669922,0.175781 -3.120118,0.175781 -1.669921,0 -2.8125,-0.219727 -1.142578,-0.175781 -1.845703,-0.74707 -0.659179,-0.571289 -0.966797,-1.538086 -0.263671,-1.010742 -0.263671,-2.548828 l 0,-1.362305 q -0.878907,1.010742 -2.241211,2.109375 -1.31836,1.098633 -3.120118,2.06543 -1.801757,0.922851 -4.042968,1.538086 -2.241211,0.615234 -4.921875,0.615234 -3.076172,0 -5.888672,-0.966797 -2.768555,-0.966797 -4.87793,-2.856445 -2.109375,-1.889648 -3.339844,-4.702148 -1.230468,-2.8125 -1.230468,-6.503907 z m 15.249023,-1.625976 q 0,4.130859 1.889649,6.284179 1.933593,2.109375 5.009765,2.109375 0.74707,0 1.669922,-0.175781 0.922852,-0.219726 1.845703,-0.571289 0.966797,-0.395508 1.845703,-0.922851 0.922852,-0.527344 1.625977,-1.186524 l 0,-14.765625 q -3.955078,0 -6.635742,0.791016 -2.680664,0.791015 -4.306641,2.109375 -1.582031,1.274414 -2.285156,2.944336 -0.65918,1.625976 -0.65918,3.383789 z" />
 							<path fill="#AADCE6" d="m 61.942797,79.660316 6.811524,-0.966796 0,-35.639649 -7.207032,0 0,-5.405273 7.207032,-1.977539 0,-3.867188 q 0,-4.570312 1.933593,-8.481445 1.933594,-3.955078 5.185547,-6.855469 3.251953,-2.900391 7.470703,-4.526367 4.21875,-1.669922 8.833008,-1.669922 2.548828,0 3.911133,0.351563 1.362305,0.307617 1.977539,0.527343 l 0,13.007813 q -0.439453,-0.483399 -1.40625,-1.010742 -0.966797,-0.571289 -2.241211,-1.054688 -1.274414,-0.483398 -2.8125,-0.791016 -1.494141,-0.351562 -2.988281,-0.351562 -1.625977,0 -2.72461,0.307617 -1.098632,0.263672 -1.757812,1.010742 -0.65918,0.703125 -0.922852,1.933594 -0.263671,1.230469 -0.263671,3.076172 l 0,8.305664 11.118164,0 0,7.470703 -11.118164,0 0,35.727539 9.008789,0.878906 0,5.844727 -30.014649,0 0,-5.844727 z" />
@@ -56,6 +56,7 @@
 						</svg> </span> </a>
 				</div>
 			</header>
+			<!-- this is the mobile version of the header -->
 			<header id="header" class="l-header u-cf js-header hide-on-mobile">
 				<div class="js-navigation-header navigation-container navigation-container--collapsed">
 					<div class="gs-container l-header__inner">
@@ -89,20 +90,22 @@
 		</div>
 		<div class="l-side-margins">
 			<article id="article" class="content content--article section-world-news tonal tonal--tone-special-report">
+				<!-- show series and section headers for non-mobile here -->
 				<div class="hide-on-mobile">
 					<header class="content__head tonal__head tonal__head--tone-special-report content__head--is-badged content__head--new-arrivals">
 						<div class="content__header tonal__header">
 							<div class="gs-container">
 								<div class="content__main-column u-cf">
 									<div class="content__labels content__labels--not-immersive">
+										<!-- replace "the New Arrivals" series logo with Afghan flag logo -->
 										<div class="badge-slot">
 											<a href="index.html"> <img class="badge-slot__img" src="files/Flag_of_Afghanistan.png" alt="Afghan refugees"> </a>
 										</div>
 										<div class="content__section-label">
-											<a class="content__section-label__link" href="index.html"> Iran and Pakistan </a>
+											<a class="content__section-label__link" href="index.html"> Afghan refugees </a>
 										</div>
 										<div class="content__series-label">
-											<a class="content__series-label__link" href="index.html">Afghan refugees</a>
+											<a class="content__series-label__link" href="index.html">Iran and Pakistan</a>
 										</div>
 									</div>
 									<h1 class="content__headline"> Counting Refugees: Iran's refugee census </h1>
@@ -113,9 +116,9 @@
 							<div class="gs-container">
 								<div class="content__main-column">
 									<div class="content__standfirst">
-										<p>
-											There is a refugee census happening in Iran.
-										</p>
+										<span class="bullet">•</span> President Rouhani said that Iran has no plan for forceful repatriation of Afghans
+										<br>
+										<span class="bullet">•</span> In addition, the government would try to get all immigrants in Iran legally registered
 									</div>
 								</div>
 							</div>
@@ -136,15 +139,8 @@
 										</div><p style="margin:0;"></p>
 									</div>
 								</div>
-								<input type="checkbox" id="show-caption" class="mobile-only u-h">
-								<label class="mobile-only reveal-caption reveal-caption--img" for="show-caption"> <span class="inline-information inline-icon reveal-caption-icon centered-icon">
-										<svg width="6" height="14" viewBox="0 0 6 14" class="reveal-caption-icon__svg centered-icon__svg inline-information__svg inline-icon__svg">
-											<path d="M4.6 12l-.4 1.4c-.7.2-1.9.6-3 .6-.7 0-1.2-.2-1.2-.9 0-.2 0-.3.1-.5l2-6.7H.7l.4-1.5 4.2-.6h.2L3 12h1.6zm-.3-9.2c-.9 0-1.4-.5-1.4-1.3C2.9.5 3.7 0 4.6 0 5.4 0 6 .5 6 1.3c0 1-.8 1.5-1.7 1.5z"></path>
-										</svg> </span> </label>
-								<figcaption class="caption caption--main caption--img">
-									Afghan refugees at a refugee center in Iran.
-								</figcaption>
 							</figure>
+							<!-- show series and section headers for mobile here -->
 							<div class="mobile-only">
 								<header class="content__head tonal__head tonal__head--tone-special-report content__head--is-badged content__head--new-arrivals">
 									<div class="content__header tonal__header">
@@ -155,11 +151,11 @@
 														<a href="index.html"> <img class="badge-slot__img" src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/256/Flag_of_Afghanistan.png" alt="Afghan refugees"> </a>
 													</div>
 													<div class="content__section-label ">
-														<a class="content__section-label__link"href="index.html"> Iran and Pakistan </a>
+														<a class="content__section-label__link"href="index.html"> Afghan refugees </a>
 													</div>
 													<div class="content__series-label
 													">
-														<a class="content__series-label__link" href="index.html">Afghan refugees</a>
+														<a class="content__series-label__link" href="index.html">Iran and Pakistan</a>
 													</div>
 												</div>
 												<h1 class="content__headline"> Counting Refugees: Iran's refugee census </h1>
@@ -170,9 +166,11 @@
 										<div class="gs-container">
 											<div class="content__main-column">
 												<div class="content__standfirst">
-													<p>
-														There is a refugee census happening in Iran.
-													</p>
+													<div class="content__standfirst">
+														<span class="bullet">•</span> President Rouhani said that Iran has no plan for forceful repatriation of Afghans
+														<br>
+														<span class="bullet">•</span> In addition, the government would try to get all immigrants in Iran legally registered
+													</div>
 												</div>
 											</div>
 										</div>
@@ -186,7 +184,6 @@
 							</div>
 							<div class="content__article-body from-content-api js-article__body">
 								<p>
-
 									Iran started homogenizing its registration method for Afghan refugees and conducted the “amayesh” plan during July 2003 and February 2004. The word, amayesh, literally means logistics. The project was implemented by the Iranian authorities to figure out regional and infrastructure potentials to accommodate refugees in the country. Those who were registered in the plan would receive amayesh documentation, that were technically temporary residency permit. This card would let Afghans to get work permit and get their children registered at schools.
 								</p>
 								<p>
