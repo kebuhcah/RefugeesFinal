@@ -10,99 +10,8 @@
 .lt-ie10 .g-aiImg {
 	width: 100%;
 }
-/* story top */
-.story.theme-main .story-header .story-meta .story-heading {
-	margin: 0 auto 10px;
-	text-align: center;
-	line-height: 2.844 rem;
-	font-size: 2.4 rem;
-}
-@media only screen and (max-width: 1244px) {
-	.story.theme-main .story-header .story-meta .story-heading {
-		line-height: 2.5596 rem;
-		font-size: 2.16 rem;
-	}
-}
-@media only screen and (max-width: 719px) {
-	.story.theme-main .story-header .story-meta .story-heading {
-		line-height: 2.2752 rem;
-		font-size: 1.92 rem;
-	}
-}
-.story.theme-main .story-header .story-meta .interactive-leadin.summary {
-	max-width: 460px;
-	margin: 0 auto 20px auto;
-	text-align: center;
-	font-size: 17px;
-	line-height: 1.6;
-}
-.story.theme-main .story-header .story-meta .byline-dateline {
-	text-align: center;
-}
-/* top asset */
-.g-top-asset {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
-}
-/* body text */
-.g-body {
-	max-width: 460px;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 17px;
-	line-height: 1.6;
-}
-.g-body b, .g-body strong {
-	font-family: 'nyt-franklin', arial, sans-serif;
-	font-size: 16px;
-}
-.g-body a {
-	text-decoration: underline;
-}
-/* subhed */
-.g-subhed h2 {
-	max-width: 460px;
-	margin: 2em auto 1em auto;
-	font: 700 1.2em/1.3em 'nyt-franklin', arial, sans-serif;
-	text-align: center;
-}
-.viewport-small-10 .g-subhed h2 {
-	font-size: 1.5em;
-}
-/* images */
-.g-item-image {
-	margin: 0 auto;
-}
-.g-item-image img {
-	width: 100%;
-}
-/* video */
-.g-item-video {
-	margin: 2em auto;
-}
-/* sources and credits */
-.g-asset-source {
-	margin: 0 auto 10px auto;
-	padding: 3px 0 10px 0;
-}
-.g-asset-source .g-source {
-	font: 400 12px/15px 'nyt-franklin', arial, sans-serif;
-	color: #999;
-}
-.g-asset-source .g-pipe {
-	margin: 0 6px 0 3px;
-	font: 400 12px/12px 'nyt-franklin', arial, sans-serif;
-	color: #999;
-}
-.g-asset-source .g-caption {
-	font-size: 300 0.82352941px georgia, 'times new roman', times, serif;
-}
-.g-asset-source .g-credit {
-	font: 400 12px/17px 'nyt-franklin', arial, sans-serif;
-	display: inline-block;
-	color: #999;
-}
+
+
 /* graphics */
 .g-item-ai2html {
 	margin: 0 auto;
@@ -201,7 +110,6 @@ p.g-asset-hed {
 	margin-bottom: 30px;
 }
 .g-column-container .g-column-hed {
-	font-family: 'nyt-franklin', arial, sans-serif;
 	font-weight: 700;
 	margin-bottom: 2px;
 }
@@ -403,12 +311,12 @@ h1.story-heading.interactive-headline {
 		font-size: 22px;
 	}
 }
-.g-trump {
+.g-iran {
 	width: 45%;
 	float: left;
 	text-align: right;
 }
-.g-others {
+.g-pakistan {
 	width: 45%;
 	float: right;
 	text-align: left;
@@ -418,7 +326,6 @@ h1.story-heading.interactive-headline {
 }
 .g-date {
 	text-align: center;
-	font-family: 'nyt-franklin', Arial, sans-serif;
 	font-size: 12px;
 	font-weight: 100;
 	margin-bottom: 10px;
@@ -441,7 +348,6 @@ h1.story-heading.interactive-headline {
 }
 .g-event {
 	text-align: center;
-	font-family: 'nyt-franklin', Arial, sans-serif;
 	font-weight: 100;
 	font-size: 14px;
 	margin-bottom: 10px;
@@ -449,7 +355,7 @@ h1.story-heading.interactive-headline {
 	background-color: white;
 	margin-top: -20px;
 }
-.g-statement {
+.g-iran-wrapper {
 	font-size: 28px;
 	text-align: right;
 	width: 45%;
@@ -481,7 +387,6 @@ h1.story-heading.interactive-headline {
 }
 .g-fallout-event {
 	font-size: 16px;
-	font-family: 'nyt-franklin', Arial, sans-serif;
 	font-weight: 100;
 	margin: 30px 0 5px;
 	line-height: 1.3;
@@ -492,7 +397,6 @@ h1.story-heading.interactive-headline {
 	}
 }
 .g-quote-explanation {
-	font-family: 'nyt-franklin', Arial, sans-serif;
 	font-weight: 100;
 	opacity: .6;
 	font-size: 15px;
@@ -513,7 +417,6 @@ h1.story-heading.interactive-headline {
 }
 .g-person {
 	box-sizing: border-box;
-	font-family: 'nyt-franklin', Arial, sans-serif;
 	font-weight: 800;
 	font-size: 14px;
 	line-height: 1.2;
@@ -588,7 +491,6 @@ h1.story-heading.interactive-headline {
 	border: none;
 	border-radius: 8px;
 	font-weight: 300;
-	font-family: nyt-franklin;
 	color: #326891;
 	font-size: 18px;
 	-webkit-transition: .25s all;
@@ -616,7 +518,6 @@ h1.story-heading.interactive-headline {
 	column-count: 2;
 }
 .g-recent-person {
-	font-family: 'nyt-franklin', Arial, sans-serif;
 	font-weight: 800;
 	font-size: 14px;
 	line-height: 1.2;

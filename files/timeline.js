@@ -34,7 +34,7 @@ var events = wrappers.filter(function(d) {
 	return d[0]["event"];
 });
 
-var statements = wrappers.append("div").attr("class", "g-statement").attr("id", function(d) {
+var statements = wrappers.append("div").attr("class", "g-iran-wrapper").attr("id", function(d) {
 	return d[0]["id"];
 }).text(function(d) {
 	return d[0]["trump-said"];
