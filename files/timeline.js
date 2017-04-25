@@ -74,3 +74,8 @@ d3.request("files/timeline_data.csv").response(function(xhr) {
 	console.log("lh:" + 0);
 	$("#g-middle-line").css("height", 0 + "px");
 });
+
+$(window).scroll(function(){
+  $('.two-flag-icon').toggleClass('scrolling', $(window).scrollTop() > $('#g-timeline').offset().top);
+})
+

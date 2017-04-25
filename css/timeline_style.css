@@ -433,13 +433,18 @@ h1.story-heading.interactive-headline {
 		padding: 3px;
 	}
 }
-.g-person img {
+.two-flag-icon {
 	border-radius: 50%;
 	width: 45px;
 	height: 45px;
-	float: left;
-	margin-right: 10px;
+	position: absolute;
 }
+
+.scrolling {
+    position: fixed;
+    top: 0;
+}
+
 @media only screen and (max-width: 719px) {
 	.g-person img {
 		font-size: 12px;
