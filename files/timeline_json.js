@@ -95,12 +95,36 @@ var data = [{
 	"values" : [{
 		"date" : "2007",
 		"pakistan" : "",
-		"iran" : "�   Iran_s Ministry of Labor issued heavy fines to employers who had illegally hired 150,000 Afghans. \r�   April: Iran_s Interior Minister said the country would pay $100 to any Afghan family who retunrs home. UNHCR stated that more than 36,000 Afghans were returned within 10 days.\r�  May: Protests took place in front of Afghanistan_s Foreign Ministry and Iran_s Embassy in Kabul: People shouting: _Death to Ahmadinejad_\r�  December: Afghan Vice President stated after a visit to Iran that Tehran has agreed to stop the repatriation during the winter. The next month Iran officially paused repatriation. ",
+		"iran" : "Iran's Ministry of Labor issues heavy fines to employers who had illegally hired 150,000 Afghans.",
 		"event" : ""
 	}, {
 		"date" : "2007",
 		"pakistan" : "Proof of Identity cards were issued to Afghan refugees",
 		"iran" : "",
+		"event" : ""
+	}]
+}, {
+	"key" : "April 2007",
+	"values" : [{
+		"date" : "April 2007",
+		"pakistan" : "",
+		"iran" : "Iran's Interior Minister said the country would pay $100 to any Afghan family who retunrs home. UNHCR stated that more than 36,000 Afghans were returned within 10 days.",
+		"event" : ""
+	}]
+}, {
+	"key" : "May 2007",
+	"values" : [{
+		"date" : "May 2007",
+		"pakistan" : "",
+		"iran" : "Protests take place in front of Afghanistan's Foreign Ministry and Iran's Embassy in Kabul: People shouting: \"Death to Ahmadinejad\"",
+		"event" : ""
+	}]
+}, {
+	"key" : "December 2007",
+	"values" : [{
+		"date" : "December 2007",
+		"pakistan" : "",
+		"iran" : "Afghan Vice President stated after a visit to Iran that Tehran has agreed to stop the repatriation during the winter. The next month Iran officially paused repatriation. ",
 		"event" : ""
 	}]
 }, {
@@ -125,11 +149,19 @@ var data = [{
 		"event" : ""
 	}]
 }, {
-	"key" : "2013",
+	"key" : "August 2013",
 	"values" : [{
-		"date" : "2013",
+		"date" : "Aug 2013",
 		"pakistan" : "",
-		"iran" : ". August: Hassan Rouhani became President. \r� September: Iran Police Commander: _We shouldn_t mistreat Afghans_ We returned them to their country and after a while we noticed that the livestock and brick industries of our country faced problems._",
+		"iran" : "Hassan Rouhani becomes President",
+		"event" : ""
+	}]
+}, {
+	"key" : "September 2013",
+	"values": [{
+		"date" : "September 2013",
+		"pakistan" : "",
+		"iran" : "Iran Police Commander: \"We shouldn't mistreat Afghans. We returned them to their country and after a while we noticed that the livestock and brick industries of our country faced problems.\"",
 		"event" : ""
 	}]
 }, {
