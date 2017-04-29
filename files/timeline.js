@@ -33,23 +33,16 @@ var statements = wrappers.append("div").attr("class", "g-iran-content").attr("id
 	return d[0]["iran"];
 });
 
-statements.filter(function(d) {
-	return d[0]["quote-explanation"];
-}).append("div").attr("class", "g-quote-explanation").text(function(d) {
-	return d[0]["quote-explanation"];
-});
 
 pakistanWrapper.each(function(d) {
 	var el = d3.select(this);
 
 	_.each(d, function(row) {
 
-		if (row['pakistan'] || row['fallout-event']) {
 
 			if (row['pakistan']) {
 				el.append('div').attr("class", "g-pakistan-content").text(row['pakistan']).append('span');
 			}
-		}
 	});
 });
 
