@@ -289,14 +289,7 @@ h1.story-heading.interactive-headline {
 	display: block;
 	font-size: 24px;
 }
-#g-middle-line {
-	width: 1px;
-	background-color: #ccc;
-	left: 50%;
-	position: absolute;
-	height: 9000px;
-	z-index: -2;
-}
+
 #g-timeline {
 	line-height: 1.3;
 }
@@ -332,12 +325,10 @@ h1.story-heading.interactive-headline {
 	color: #aaa;
 	background: white;
 	padding-bottom: 4px;
+	position: relative;
+	z-index: 3;
 }
-@media only screen and (max-width: 719px) {
-	.g-date {
-		font-size: 11px;
-	}
-}
+
 .g-date::before {
 	content: "";
 	height: 1px;
@@ -345,7 +336,34 @@ h1.story-heading.interactive-headline {
 	margin: 4px auto;
 	background: #ccc;
 	display: block;
+	position: relative;
+	z-index: 3;
 }
+#g-middle-line {
+	width: 1px;
+	background-color: #ccc;
+	left: 50%;
+	position: absolute;
+	height: 9000px;
+	z-index: 1;
+}
+
+.two-flag-icon {
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	left: 0; right:0;
+    margin: auto;
+	z-index: 4;
+}
+
+
+.scrolling {
+    position: fixed;
+    top: 0;
+}
+
 .g-event {
 	text-align: center;
 	font-weight: 100;
@@ -354,6 +372,8 @@ h1.story-heading.interactive-headline {
 	padding: 10px 0;
 	background-color: white;
 	margin-top: -20px;
+	position: relative;
+	z-index: 2;
 }
 .g-iran-wrapper {
 	font-size: 16px;
@@ -432,17 +452,6 @@ h1.story-heading.interactive-headline {
 		font-size: 12px;
 		padding: 3px;
 	}
-}
-.two-flag-icon {
-	border-radius: 50%;
-	width: 45px;
-	height: 45px;
-	position: absolute;
-}
-
-.scrolling {
-    position: fixed;
-    top: 0;
 }
 
 @media only screen and (max-width: 719px) {

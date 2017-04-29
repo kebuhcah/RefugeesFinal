@@ -72,7 +72,7 @@ d3.request("files/timeline_data.csv").response(function(xhr) {
 
 	var lineHeight = $("#g-dates").height();
 	console.log("lh:" + 0);
-	$("#g-middle-line").css("height", 0 + "px");
+	$("#g-middle-line").css("height", lineHeight + "px");
 });
 
 $(window).scroll(function(){
