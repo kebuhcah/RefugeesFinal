@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <!-- modified from url=(0123)https://www.theguardian.com/world/2017/apr/09/its-a-shambles-data-shows-most-asylum-seekers-put-in-poorest-parts-of-britain -->
-<!-- see iran_1.html for more detailed comments of header section, since all story pages have same template -->
 <html class="js-on is-modern id--signed-out svg has-flex has-flex-wrap has-fixed has-sticky">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<!-- following line needed to detect mobile (width alone isn't enough) -->
 		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-		<title>Counting Refugees in Pakistan</title>
+		<title>Counting Refugees in Iran</title>
 		<meta name="author" content="Amel Ghani">
 		<meta name="author" content="Somayeh Malekian">
 		<meta name="author" content="Kevin Sun">
+		<!-- move css to separate file (was saved inline when saving the original page) -->
 		<link rel="stylesheet" type="text/css" href="css/story.css">
+		<!-- Guardian font (removed other fonts which weren't being used) -->
 		<style class="webfont">
 			@font-face {
 				font-family: "Guardian Egyptian Web";
@@ -36,9 +36,10 @@
 	</head>
 	<body>
 		<div>
+			<!-- header has two versions for mobile and non-mobile, this is the non-mobile -->
 			<header class="new-header">
 				<div class="new-header__inner gs-container">
-					<a class="new-header__logo-wrapper"  href="index.html"> <span class="u-h">Afghanistan</span> <span class="inline-guardian-logo-160 inline-logo new-header__logo">
+					<a class="new-header__logo-wrapper"  href="index.html"> <span class="u-h">Afghanistan</span> <span class="inline-guardian-logo-160 inline-logo new-header__logo"> <!-- inkscape-generated custom svg logo. TODO: simplify! original Guardian logo had just two paths -->
 						<svg width="160" height="30" viewBox="0 0 480 120" class="new-header__logo__svg inline-guardian-logo-160__svg inline-logo__svg">
 							<path fill="#AADCE6" d="m 10.26311,71.486488 q 0,-4.262695 2.065429,-7.382812 2.109375,-3.120117 5.888672,-5.185547 3.823242,-2.06543 9.184571,-3.076172 5.405273,-1.054687 11.99707,-1.142578 l 0,-1.845703 q 0,-2.285156 -0.351563,-3.999024 -0.351562,-1.713867 -1.362304,-2.856445 -0.966797,-1.142578 -2.72461,-1.669922 -1.713867,-0.571289 -4.482422,-0.571289 -2.548828,0 -4.790039,0.351563 -2.197265,0.351562 -4.130859,0.878906 -1.933594,0.527344 -3.55957,1.142578 -1.582032,0.615234 -2.900391,1.186523 l -0.04395,0 -2.856446,-5.932617 q 0.878907,-0.74707 2.944336,-1.933593 2.109375,-1.186524 5.009766,-2.329102 2.944336,-1.142578 6.503906,-1.933594 3.603516,-0.834961 7.426758,-0.834961 5.273438,0 8.833008,1.010742 3.55957,1.010743 5.668945,3.208008 2.15332,2.197266 3.076172,5.668946 0.922852,3.471679 0.922852,8.393554 l 0,26.938477 4.790039,0 0,5.581055 q -0.834961,0.175781 -2.197266,0.395507 -1.362305,0.263672 -2.988281,0.483399 -1.582031,0.263672 -3.251953,0.395508 -1.669922,0.175781 -3.120118,0.175781 -1.669921,0 -2.8125,-0.219727 -1.142578,-0.175781 -1.845703,-0.74707 -0.659179,-0.571289 -0.966797,-1.538086 -0.263671,-1.010742 -0.263671,-2.548828 l 0,-1.362305 q -0.878907,1.010742 -2.241211,2.109375 -1.31836,1.098633 -3.120118,2.06543 -1.801757,0.922851 -4.042968,1.538086 -2.241211,0.615234 -4.921875,0.615234 -3.076172,0 -5.888672,-0.966797 -2.768555,-0.966797 -4.87793,-2.856445 -2.109375,-1.889648 -3.339844,-4.702148 -1.230468,-2.8125 -1.230468,-6.503907 z m 15.249023,-1.625976 q 0,4.130859 1.889649,6.284179 1.933593,2.109375 5.009765,2.109375 0.74707,0 1.669922,-0.175781 0.922852,-0.219726 1.845703,-0.571289 0.966797,-0.395508 1.845703,-0.922851 0.922852,-0.527344 1.625977,-1.186524 l 0,-14.765625 q -3.955078,0 -6.635742,0.791016 -2.680664,0.791015 -4.306641,2.109375 -1.582031,1.274414 -2.285156,2.944336 -0.65918,1.625976 -0.65918,3.383789 z" />
 							<path fill="#AADCE6" d="m 61.942797,79.660316 6.811524,-0.966796 0,-35.639649 -7.207032,0 0,-5.405273 7.207032,-1.977539 0,-3.867188 q 0,-4.570312 1.933593,-8.481445 1.933594,-3.955078 5.185547,-6.855469 3.251953,-2.900391 7.470703,-4.526367 4.21875,-1.669922 8.833008,-1.669922 2.548828,0 3.911133,0.351563 1.362305,0.307617 1.977539,0.527343 l 0,13.007813 q -0.439453,-0.483399 -1.40625,-1.010742 -0.966797,-0.571289 -2.241211,-1.054688 -1.274414,-0.483398 -2.8125,-0.791016 -1.494141,-0.351562 -2.988281,-0.351562 -1.625977,0 -2.72461,0.307617 -1.098632,0.263672 -1.757812,1.010742 -0.65918,0.703125 -0.922852,1.933594 -0.263671,1.230469 -0.263671,3.076172 l 0,8.305664 11.118164,0 0,7.470703 -11.118164,0 0,35.727539 9.008789,0.878906 0,5.844727 -30.014649,0 0,-5.844727 z" />
@@ -55,6 +56,7 @@
 						</svg> </span> </a>
 				</div>
 			</header>
+			<!-- this is the mobile version of the header -->
 			<header class="l-header u-cf js-header hide-on-mobile">
 				<div class="js-navigation-header navigation-container navigation-container--collapsed">
 					<div class="gs-container l-header__inner">
@@ -88,12 +90,14 @@
 		</div>
 		<div class="l-side-margins">
 			<article class="content content--article section-world-news tonal tonal--tone-special-report">
+				<!-- show series and section headers for non-mobile here -->
 				<div class="hide-on-mobile">
 					<header class="content__head tonal__head tonal__head--tone-special-report content__head--is-badged content__head--new-arrivals">
 						<div class="content__header tonal__header">
 							<div class="gs-container">
 								<div class="content__main-column u-cf">
 									<div class="content__labels content__labels--not-immersive">
+										<!-- replace "the New Arrivals" series logo with Afghan flag logo -->
 										<div class="badge-slot">
 											<a href="index.html"> <img class="badge-slot__img" src="files/Flag_of_Afghanistan.png" alt="Afghan refugees"> </a>
 										</div>
@@ -104,7 +108,7 @@
 											<a class="content__series-label__link" href="index.html">Iran and Pakistan</a>
 										</div>
 									</div>
-									<h1 class="content__headline"> Counting Refugees: Pakistan's refugee-less census </h1>
+									<h1 class="content__headline"> Counting Refugees: Challenges </h1>
 								</div>
 							</div>
 						</div>
@@ -112,9 +116,9 @@
 							<div class="gs-container">
 								<div class="content__main-column">
 									<div class="content__standfirst">
-										<span class="bullet">•</span> The federal government has been ordered not to count Afghan refugees in the census
+										<span class="bullet">•</span> 'Too often data is presented as credible when in fact the uncertainties render it unacceptable for use in planning'
 										<br>
-										<span class="bullet">•</span> Baloch nationalists are concerned that counting refugees will formalize demographic shifts
+										<span class="bullet">•</span> Political and practical difficulties have often made reliable population hard to collect
 									</div>
 								</div>
 							</div>
@@ -128,14 +132,15 @@
 								<div style="padding-bottom: 0">
 									<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:594px;">
 										<div style="padding:0;margin:0;text-align:left;">
-											<a href="http://www.gettyimages.com/detail/72288952" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a>
+											<a href="http://www.gettyimages.com/detail/542380016" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a>
 										</div>
-										<div style="overflow:hidden;height:0;position:relative;padding:66.329966% 0 0 0;width:100%;">
-											<iframe src="//embed.gettyimages.com/embed/72288952?et=0gNGFYRZSNhXWsLRN9VCmA&tld=com&viewMoreLink=off&sig=W1h2IKM7aw2TRKvOOqcbvdkDqWTx9BEZFPd89xsqmpM=&caption=true" width="594" height="394" scrolling="no" frameborder="0" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe>
+										<div style="overflow:hidden;position:relative;height:0;padding:67.676768% 0 0 0;width:100%;">
+											<iframe src="//embed.gettyimages.com/embed/542380016?et=Val2aigIQSdXCKqQ8B1W1g&tld=com&viewMoreLink=off&sig=fbWEjufkJ6Bry8LAdnKeNvfyqFjPC5LBBdXFx0GjzJo=&caption=true" width="594" height="402" scrolling="no" frameborder="0" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe>
 										</div><p style="margin:0;"></p>
 									</div>
 								</div>
 							</figure>
+							<!-- show series and section headers for mobile here -->
 							<div class="mobile-only">
 								<header class="content__head tonal__head tonal__head--tone-special-report content__head--is-badged content__head--new-arrivals">
 									<div class="content__header tonal__header">
@@ -153,7 +158,7 @@
 														<a class="content__series-label__link" href="index.html">Iran and Pakistan</a>
 													</div>
 												</div>
-												<h1 class="content__headline"> Counting Refugees: Pakistan's refugee-less census </h1>
+												<h1 class="content__headline"> Counting Refugees: Challenges </h1>
 											</div>
 										</div>
 									</div>
@@ -161,9 +166,11 @@
 										<div class="gs-container">
 											<div class="content__main-column">
 												<div class="content__standfirst">
-													<span class="bullet">•</span> The federal government has been ordered not to count Afghan refugees in the census
-													<br>
-													<span class="bullet">•</span> Baloch nationalists are concerned that counting refugees will formalize demographic shifts
+													<div class="content__standfirst">
+														<span class="bullet">•</span> 'Too often data is presented as credible when in fact the uncertainties render it unacceptable for use in planning'
+														<br>
+														<span class="bullet">•</span> Political and practical difficulties have often made reliable population hard to collect
+													</div>
 												</div>
 											</div>
 										</div>
@@ -177,53 +184,12 @@
 							</div>
 							<div class="content__article-body from-content-api js-article__body">
 								<p>
-									The Balochistan High Court, the highest court of authority in Pakistan’s southwestern province, ordered federal and provincial governments to not count Afghan refugees in the census they conducted. The court was responding to a petition submitted by members of the Balochistan National Party, expressing concern over the change in demographics of the province in Afghan refugees were to be included.
+									ADD CONTENT
 								</p>
-								<p>
-									The decision came just a day before the census was set to take place in the province. And as Pakistan conducts its first census in 19 years, the Afghan population in the country will not be counted.
-								</p>
-								<p>
-									The document submitted to the High Court highlights two main concerns, the first one is, “the presence of 40, 00, 000 Afghan Refugees as well as blocked ID cards and ID cards marked as suspect.” This refers to a larger program where Afghan refugees have obtained Pakistani identity cards by bribing officers in the issuing authority, NADRA. The Pakistani government has been investigating the matter and revoking card issues illegally.
-								</p>
-								<p>
-									It also points to displacement of people from the province saying, “…thousands of Baloch citizens have migrated to other parts of the country.” They proposed the creation of a separate column to determine whether an individual is an IDP to determine which area of the country they were coming from. The party wanted to determine the number of Baloch IDPs.
-								</p>
-								<p>
-									The petition was not the first time BNP discussed leaving out Afghan refugees from the census.
-								</p>
-								<p>
-									“If a census is held now, the Baloch will be recorded as a minority when they are the natives of Balochistan,” said Mir Hasil Khan Bizinjo, president of Balochistan National Party, who is also the federal minister for Ports and Shipping, in a press conference last year.
-								</p>
-								<p>
-									BNP has been opposed to the settlement of Afghan refugees in the country since they first arrived in the 1980s.
-								</p>
-								<p>
-									The issuance of fake identity cards has been recognized by the government and  has been under investigation since 2013. Till last year the government had cancelled 95, 959 identity cards thought to be fake.
-								</p>
-								<p>
-									Mir Muhammad Talpur, part of the Baloch rights movement in Balochistan says he understands the stance of the Baloch National Party is taking.
-								</p>
-								<p>
-									“The Baloch have very little say in the politics of the country,” he said. He pointed to the fact that very few Baloch held any important portfolios in the government. Muhammad Khan Achakzai, the present Governor of Balochistan is pashtun and belongs to the Pakhtunkhwa Milli Awami Party. Talpur also points to the elections in 2013 saying Achakzai’s party won from areas which had previously been Baloch strongholds.
-								</p>
-								<p>
-									Talpur says it makes little sense for the government to include them in the census considering it ultimately wants them to go back to Afghanistan. “Even from a planning and development point of view it doesn’t make sense because they will be sent back to Afghanistan,” he said adding that the government should hold a separate census to account for the number of refugees instead of including them in the general census.
-								</p>
-								<p>
-									Other political parties in the province such as the Pakhtunkhwa Milli Awami Party though have asked the government to not send back Pakhtuns who have been living in the country for decades now.
-								</p>
-								<p>
-									Both parties are divided on ethnic lines, where BNP represents the Baloch population, while Awami party largely represents the Pakhtun population.
-								</p>
-								<p>
-									UNHCR and the Pakistani government have previously carried out two censuses before to determine the number of Afghan refugees in the country. The first census took place in 2005. Proof of residency cards were issued to refugees who had themselves registered with UNHCR.
-								</p>
-								<p>
-									The second census took place in 2011. The purpose of the censuses was to register Afghan refugees and issue a plan for repatriation.
-								</p>
-								<p>
-									"When you count people, this has political implications," says Daniel Karrell, a professor of Social Science at NYU Abu Dhabi. "Once people know how many of them there are, they might start asking for power. For similar reasons in Afghanistan, there hasn’t been a census in decades either."
-								</p>
+								<!-- line graph: Visualization 1 -->
+								<figure class="element element-interactive interactive">
+									<iframe height="400" src="./files/visualization_1.svg" style="width: 100%; border: none;"></iframe>
+								</figure>
 							</div>
 						</div>
 					</div>
