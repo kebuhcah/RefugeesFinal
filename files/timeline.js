@@ -18,19 +18,31 @@ var pakistanWrapper = dates.append("div").attr("class", "g-pakistan-wrapper").da
 	return d.values;
 });
 
+var iranWrapper = dates.append("div").attr("class", "g-iran-wrapper").datum(function(d) {
+	return d.values;
+});
+
 var events = wrappers.filter(function(d) {
 	var isThereAnEvent = _.find(d, function(row) {
 		return row.event;
 	});
 	return isThereAnEvent;
-}).append("div").attr("class", "g-event").text(function(d) {
+}).append("div").attr("class", "g-event").html(function(d) {
 	return d[0]["event"];
 });
 
-var statements = wrappers.append("div").attr("class", "g-iran-content").attr("id", function(d) {
-	return d[0]["id"];
-}).html(function(d) {
-	return d[0]["iran"];
+iranWrapper.each(function(d) {
+	var el = d3.select(this);
+
+	_.each(d, function(row) {
+		if (row['iran-header']) {
+			el.append('div').attr("class", "g-iran-header").html(row['iran-header']);
+		}
+
+		if (row['iran']) {
+			el.append('div').attr("class", "g-iran-content").html(row['iran']);
+		}
+	});
 });
 
 pakistanWrapper.each(function(d) {
