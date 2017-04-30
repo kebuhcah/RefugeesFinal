@@ -1,7 +1,10 @@
-
-
 #g-timeline {
 	line-height: 1.3;
+	max-width: 600px;
+	position: absolute;
+	left: 0; 
+	right:0;
+    margin: auto;
 }
 .g-top-hed {
 	font-size: 28px;
@@ -63,7 +66,8 @@
 	width: 45px;
 	height: 45px;
 	position: absolute;
-	left: 0; right:0;
+	left: 0; 
+	right:0;
     margin: auto;
 	z-index: 4;
 }
@@ -96,6 +100,13 @@
 
 .g-pakistan-content {
 	font-size: 16px;
+	line-height: 1.3;
+	margin-bottom: 40px;
+	font-weight: 500;
+}
+
+.g-pakistan-header {
+	font-size: 22px;
 	line-height: 1.3;
 	margin-bottom: 40px;
 	font-weight: 500;
@@ -183,15 +194,4 @@
 	-moz-column-count: 2;
 	-webkit-column-count: 2;
 	column-count: 2;
-}
-.g-recent-person {
-	font-weight: 800;
-	font-size: 14px;
-	line-height: 1.2;
-	margin-bottom: 4px;
-}
-.g-recent-person span {
-	font-size: 13px;
-	font-weight: 100;
-	opacity: .85;
 }

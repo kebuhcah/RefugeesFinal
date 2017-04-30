@@ -33,16 +33,17 @@ var statements = wrappers.append("div").attr("class", "g-iran-content").attr("id
 	return d[0]["iran"];
 });
 
-
 pakistanWrapper.each(function(d) {
 	var el = d3.select(this);
 
 	_.each(d, function(row) {
+		if (row['pakistan-header']) {
+			el.append('div').attr("class", "g-pakistan-header").html(row['pakistan-header']);
+		}
 
-
-			if (row['pakistan']) {
-				el.append('div').attr("class", "g-pakistan-content").text(row['pakistan']).append('span');
-			}
+		if (row['pakistan']) {
+			el.append('div').attr("class", "g-pakistan-content").html(row['pakistan']);
+		}
 	});
 });
 

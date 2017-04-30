@@ -99,7 +99,8 @@ var data = [{
 		"event" : ""
 	}, {
 		"date" : "2007",
-		"pakistan" : "Proof of Identity cards were issued to Afghan refugees",
+		"pakistan-header": "Proof of Identity cards were issued to Afghan refugees",
+		"pakistan" : "The UNHCR encouraged all refugees to come forward and register themselves after the census. The validation of these cards and the tripartite agreement for repatriation was extended to 2009",
 		"iran" : "",
 		"event" : ""
 	}]
