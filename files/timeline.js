@@ -1,4 +1,9 @@
-console.log(data)
+/*
+ * based on code found at https://www.nytimes.com/interactive/2016/08/29/us/politics/at-least-110-republican-leaders-wont-vote-for-donald-trump-heres-when-they-reached-their-breaking-point.html?_r=0
+ * with significant modifications due to asymmetrical structure of original timeline, as well as renaming of classes and attributes
+ */
+
+console.log(data);
 
 var container = d3.select("#g-timeline");
 
