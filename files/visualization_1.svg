@@ -19,7 +19,7 @@
    sodipodi:docname="visualization_1.svg"><metadata
      id="metadata4177"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs4175"><marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
@@ -958,7 +958,7 @@
              sodipodi:role="line"
              y="0"
              x="-89.950127"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.2373848px;font-family:Helvetica;-inkscape-font-specification:Helvetica">USD expended per displaced person</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.2373848px;font-family:Helvetica;-inkscape-font-specification:Helvetica">US$ expended per displaced person</tspan></text>
 </g></g><g
        transform="matrix(0.62378543,0,0,-0.62378543,12.600089,288.60612)"
        id="g4461" /><g
@@ -1449,7 +1449,7 @@
          id="tspan5829"
          x="48.355679"
          y="-295.90259"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14px;font-family:Merriweather,Georgia;-inkscape-font-specification:'Merriweather Bold'">UNHCR per-capita expenses in Iran have recently caught up to Pakistan</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14px;font-family:Merriweather, Georgia;-inkscape-font-specification:'Merriweather Bold'">UN per-capita expenses in Iran have recently caught up to Pakistan</tspan></text>
 <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:16.73138428px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
