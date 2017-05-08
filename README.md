@@ -24,7 +24,8 @@
 * iran-pakistan-flag.jpg - flag icon used as floating marker when scrolling down timeline (source: https://www.crossed-flag-pins.com/Friendship-Pins/Iran/Flag-Pins-Iran-Pakistan.jpg)
 * Flag_of_Afghanistan.png	- icon for section header in each story page (source: https://www.iconfinder.com/icons/96296/afghanistan_flag_of_icon)
 
-* visualization_1.svg	- SVG of visualization 1, UNHCR expenditure per capita line chart
+* visualization_1_web.svg	- desktop version of SVG of visualization 1, bar/area chart of UNHCR refugee population and returnee data
+* visualization_1_mobile.svg	- mobile version of SVG of visualization 1, bar/area chart of UNHCR refugee population and returnee data
 
 ## data
 files used for analysis UNHCR Global Reports (not used directly in website)
